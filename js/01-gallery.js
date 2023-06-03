@@ -7,9 +7,7 @@ function createGallery(listImage) {
   const gallery = listImage
     .map(
       (image) =>
-        //`<li class="gallery__image"> <img src=${image.preview} alt=${image.description}> </li>`
         `<li> <div><a href=""><img class="gallery__image"  src=${image.preview} data-source=${image.original} alt="${image.description}"></a></div> </li>`
-      //console.log(image.original)
     )
     .join("");
 
